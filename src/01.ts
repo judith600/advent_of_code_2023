@@ -37,8 +37,8 @@ function getCalibrationValues(input: Array<string>): number {
     return result
 }
 
-function getLinesSplitBy(fileName: string, delimiter: string): string[] {
-    const input = readFileSync('./resources/' + fileName +'.txt', "utf-8");
+export function getLinesSplitBy(fileName: string, delimiter: string = '\r\n'): string[] {
+    const input = readFileSync('./resources/' + fileName, "utf-8");
     return input.split(delimiter)
 }
 
