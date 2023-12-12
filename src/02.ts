@@ -55,7 +55,6 @@ function partTwo(lines: string[]) {
                 }
             })
         }
-        // console.log(matrix)
         matrixCollection.push(matrix.blue * matrix.green * matrix.red)
     }
     console.log(matrixCollection)
